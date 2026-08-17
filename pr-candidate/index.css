@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* Design tokens mirrored from the app so token utilities (bg-proBlue,
+   text-tripBirdyBlack, bg-secondaryBlue, …) resolve when run standalone. */
+@theme {
+  --color-primaryBlue: #DEEBF7;
+  --color-secondaryBlue: #BDD7EE;
+  --color-secondaryBlueHover: #8CAECE;
+  --color-proBlue: #2E75B6;
+  --color-maxBlue: #1F4E79;
+  --color-maxBlueHover: #1D4062;
+  --color-tripBirdyBlack: #262626;
+  --color-tripBirdyGray: #6B7280;
+  --color-tripBirdyGrayHover: #545B62;
+  --color-tripBirdyGreen: #22C55D;
+  --color-tripBirdyGreenHover: #1B9D4A;
+  --color-tripBirdyRed: #F14444;
+  --color-tripBirdyRedHover: #C03636;
+  --color-bitcoinOrange: #F6931B;
+}
+
+/* Modal stacking utility used by the detail overlay. */
+@utility z-modal {
+  z-index: 1000;
+}
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
