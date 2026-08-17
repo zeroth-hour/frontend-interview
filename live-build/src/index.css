@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens. These mirror our production app's token definitions so that
+ * utilities like `bg-proBlue`, `text-tripBirdyBlack`, and `bg-secondaryBlue`
+ * work the same way here. Prefer these token utilities over raw hex values.
+ * The same values are also exported from src/tokens/colors.ts.
+ */
+@theme {
+  --color-primaryBlue: #DEEBF7;
+  --color-secondaryBlue: #BDD7EE;
+  --color-secondaryBlueHover: #8CAECE;
+  --color-proBlue: #2E75B6;
+  --color-maxBlue: #1F4E79;
+  --color-maxBlueHover: #1D4062;
+  --color-tripBirdyBlack: #262626;
+  --color-tripBirdyGray: #6B7280;
+  --color-tripBirdyGrayHover: #545B62;
+  --color-tripBirdyGreen: #22C55D;
+  --color-tripBirdyGreenHover: #1B9D4A;
+  --color-tripBirdyRed: #F14444;
+  --color-tripBirdyRedHover: #C03636;
+  --color-bitcoinOrange: #F6931B;
+}
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
